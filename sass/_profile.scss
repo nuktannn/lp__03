@@ -1,0 +1,161 @@
+@use "mixin";
+@use "color";
+@use "font";
+
+/*================================
+profile
+===============================*/
+.profile {
+  padding-bottom: 92px;
+  @include mixin.mq(sp) {
+    padding: 0 20px 80px;
+  }
+}
+
+.profile__inner {
+}
+
+.profile__heading-title {
+  text-align: center;
+  color: color.$base-color;
+  font-family: font.$font-en;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 4.48px;
+  @include mixin.mq(sp) {
+    font-size: 2.8rem;
+    line-height: 42px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.profile__heading-sub-title {
+  text-align: center;
+  margin-top: 40px;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  @include mixin.mq(sp) {
+    margin-top: 0;
+    font-size: 1.4rem;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.profile__wrapper {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  @include mixin.mq(sp) {
+    margin-top: 16px;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.profile__left {
+  img {
+    width: 360px;
+    @include mixin.mq(sp) {
+      margin: 25px auto 0;
+      width: 100%;
+    }
+  }
+}
+
+.profile__right {
+  width: 428px;
+  @include mixin.mq(sp) {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.profile__head {
+  display: flex;
+  align-items: center;
+}
+
+.profile__head-left {
+  color: color.$base-color;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+}
+
+.profile__sns {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile__sns-item {
+  img {
+    width: 40px;
+  }
+}
+
+.profile__text {
+  margin-top: 32px;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  @include mixin.mq(sp) {
+    margin-top: 28px;
+    font-size: 1.6rem;
+    line-height: 28.8px; /* 180% */
+    letter-spacing: 0.32px;
+  }
+}
+
+.profile__message {
+  margin: 80px auto 0;
+  border: 1px solid color.$main-color;
+  padding: 58px 88px;
+  width: 878px;
+  @include mixin.mq(sp) {
+    margin: 48px auto 0;
+    padding: 24px 20px;
+    width: 100%;
+  }
+}
+
+.profile__message-title {
+  img {
+    width: 213px;
+    margin: 0 auto;
+    @include mixin.mq(sp) {
+      width: 152px;
+    }
+  }
+}
+
+.profile__message-text {
+  margin-top: 35px;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+  @include mixin.mq(sp) {
+    margin-top: 16px;
+    line-height: 28.8px;
+    letter-spacing: 0.32px;
+    font-size: 1.59rem;
+  }
+}

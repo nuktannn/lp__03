@@ -1,0 +1,159 @@
+@use "mixin";
+@use "color";
+@use "font";
+
+/*================================
+voice
+===============================*/
+.voice {
+  padding: 96px 0 192px;
+  @include mixin.mq(sp) {
+    padding: 56px 20px 96px;
+  }
+}
+
+.voice__inner {
+}
+
+.voice__heading-title {
+  text-align: center;
+  color: color.$main-color;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 3.2px;
+  @include mixin.mq(tab) {
+    padding: 0 100px;
+  }
+  @include mixin.mq(sp) {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+}
+
+.voice__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 95px;
+  margin-top: 80px;
+  @include mixin.mq(tab) {
+    gap: 30px;
+  }
+  @include mixin.mq(sp) {
+    gap: 0;
+    margin-top: 40px;
+    flex-direction: column-reverse;
+  }
+}
+
+.voice__wrapper2 {
+  flex-direction: row-reverse;
+  @include mixin.mq(sp) {
+    flex-direction: column-reverse;
+  }
+}
+
+.voice-left {
+  width: 503px;
+  @include mixin.mq(tab) {
+    width: 400px;
+  }
+  @include mixin.mq(sp) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.voice-left{
+  @include mixin.mq(sp) {
+    margin-top: 24px;
+  }
+}
+
+.voice-left3 {
+  width: 520px;
+  @include mixin.mq(tab) {
+    width: 400px;
+  }
+  @include mixin.mq(sp) {
+    width: 100%;
+    margin-top: 28px;
+  }
+}
+
+.voice__title {
+  color: color.$base-color;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  @include mixin.mq(sp) {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+  }
+}
+
+.voice__text {
+  margin-top: 20px;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  @include mixin.mq(sp) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.32px;
+    margin-top: 10px;
+  }
+}
+
+.voice__text3 {
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  @include mixin.mq(sp) {
+    line-height: 28.8px;
+    letter-spacing: 0.32px;
+  }
+}
+
+.voice__member {
+  margin-top: 17px;
+  text-align: right;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  @include mixin.mq(sp) {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+.voice__right {
+  img {
+    width: 450px;
+    @include mixin.mq(tab) {
+      width: 350px;
+    }
+    @include mixin.mq(sp) {
+      width: 100%;
+    }
+  }
+}

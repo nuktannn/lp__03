@@ -1,0 +1,287 @@
+@use "mixin";
+@use "color";
+@use "font";
+
+/*================================
+campaign
+===============================*/
+.campaign {
+  background: url(../img/campaign__bg.png) no-repeat center center / cover;
+  width: 100%;
+  height: 913px;
+  padding: 96px 0;
+  @include mixin.mq(sp) {
+    height: 612px;
+    padding: 56px 20px;
+  }
+}
+
+.campaign__inner {
+}
+
+.campaign__wrapper {
+  background: color.$base-color2;
+  padding: 64px 87px 64px 91px;
+  width: 1060px;
+  margin: 0 auto;
+  @include mixin.mq(tab) {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  @include mixin.mq(sp) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 36px 10px;
+  }
+}
+
+.campaign__heading {
+  text-align: center;
+  padding: 20px 0 16px;
+  border-top: 1px solid color.$main-color;
+  border-bottom: 1px solid color.$main-color;
+  @include mixin.mq(sp) {
+    padding: 12px;
+  }
+}
+
+.campaign__title {
+  color: color.$main-color;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 6px;
+  margin-left: 24px;
+  @include mixin.mq(sp) {
+    font-size:1.98rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-left: 0;
+  }
+}
+
+.campaign__body {
+  margin-top: 46px;
+  padding: 0 140px;
+  @include mixin.mq(tab) {
+    padding: 0 100px;
+  }
+  @include mixin.mq(sp) {
+    padding: 0;
+    margin: 24px auto 0;
+  }
+}
+
+.campaign__image {
+  img {
+    width: 236px;
+    margin-left: auto;
+    margin-right: -26px;
+    @include mixin.mq(sp) {
+      width: 124px;
+    margin-right: 10px;
+    }
+  }
+}
+
+.campaign__course {
+  color: color.$base-color;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 4.2px;
+  margin-top: -3px;
+  @include mixin.mq(sp) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+    max-width: 208px;
+    margin: 16px auto 0;
+  }
+}
+
+.campaign__cost {
+  display: flex;
+  align-items: center;
+  @include mixin.mq(sp) {
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
+
+.campaign__cost-left {
+  color: color.$base-color;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+  margin-right: 100px;
+  @include mixin.mq(sp) {
+    margin-right: 10px;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+  }
+}
+
+.campaign__cost-left1 {
+  color: color.$base-color;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  @include mixin.mq(sp) {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
+
+.campaign__cost-left2 {
+  color: color.$base-color;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  @include mixin.mq(sp) {
+  display: none;
+  }
+}
+
+.campaign__cost-center {
+  margin-right: 68px;
+  @include mixin.mq(sp) {
+    margin-right: 10px;
+  }
+  img {
+    width: 49px;
+    @include mixin.mq(sp) {
+      width: 23px;
+    }
+  }
+}
+
+.campaign__cost-right {
+  color: color.$main-color;
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px;
+  letter-spacing: -34.2px;
+  @include mixin.mq(sp) {
+    font-size: 4rem;
+    line-height: 72px;
+    letter-spacing: -19px;
+  }
+  span {
+    color: color.$main-color;
+    font-size: 16rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160px;
+    letter-spacing: -18.4px;
+    @include mixin.mq(sp) {
+      font-size: 7.2rem;
+      line-height: 72px;
+      letter-spacing: -8.28px;
+    }
+  }
+}
+
+.campaign__period {
+  margin: 14px auto 0;
+  max-width: 500px;
+  @include mixin.mq(sp) {
+   max-width: 250px;
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start; 
+  }
+}
+
+.campaign__period-left {
+  margin-right: 20px;
+  color: color.$base-color;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 7px 15px;
+  border: 1px solid color.$base-color;
+  @include mixin.mq(sp) {
+    margin-right: 0;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    //枠線
+    display: inline-block;
+  }
+}
+
+.campaign__period-right {
+  color: color.$base-color;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  @include mixin.mq(sp) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-top: 10px;
+  }
+}
+
+.campaign__link {
+  margin-top: 58px;
+  text-align: center;
+  @include mixin.mq(sp) {
+    margin-top: 32px;
+  }
+  a {
+    display: inline-block;
+    padding: 26px 0;
+    color: color.$base-color2;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 5.6px;
+    border-radius: 2px;
+    width: 600px;
+    background: linear-gradient(
+      266deg,
+      #8b6c3a 23.24%,
+      #b19464 55.28%,
+      #8b6c3a 85.32%,
+      #8b6c3a 85.32%
+    );
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.16);
+
+    &:hover{
+      opacity: 0.7;
+    }
+
+    @include mixin.mq(sp) {
+      padding: 20px 0;
+      font-size: 1.6rem;
+      line-height: 21px;
+      letter-spacing: 0.8px;
+      width: 100%;
+    }
+  }
+}

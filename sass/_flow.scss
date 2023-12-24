@@ -1,0 +1,177 @@
+@use "mixin";
+@use "color";
+@use "font";
+
+/*================================
+flow
+===============================*/
+.flow {
+    padding: 96px 0 0px;
+   background: color.$base-color3;
+    @include mixin.mq(sp) {
+        padding: 56px 20px;
+    }
+}
+
+.flow__inner {
+}
+
+.flow-heading {
+  @include mixin.mq(pc) {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  @include mixin.mq(tab) {
+    max-width: 810px;
+    margin: 0 auto;
+  }
+}
+
+.flow__heading-title {
+  color: color.$base-color;
+  font-family: font.$font-en;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 4.48px;
+  position: relative;
+  @include mixin.mq(tab) {
+    font-size: 4.5rem;
+  }
+  @include mixin.mq(sp) {
+    font-size: 2.8rem;
+    line-height: 42px;
+    letter-spacing: 1.4px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    width: 345px;
+    height: 0.6px;
+    background: color.$base-color;
+    // @include mixin.mq(lg) {
+    //   right: 30px;
+    // }
+
+    @include mixin.mq(tab) {
+      right: 30px;
+    }
+
+    @include mixin.mq(sp) {
+      display: none;
+    }
+  }
+}
+
+.flow__heading-sub-title {
+  margin-top: 40px;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  margin-bottom: 80px;
+  @include mixin.mq(sp) {
+    margin-top: 0;
+    font-size: 1.4rem;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    margin-bottom: 40px;
+  }
+}
+
+.flow__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  @include mixin.mq(tab) {
+    gap: 30px;
+  }
+  @include mixin.mq(sp) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.flow__item {
+    @include mixin.mq(sp) {
+        & + & {
+            margin-top: 40px;
+        }
+    }
+
+}
+
+.flow__image {
+  img {
+    width: 300px;
+    height: 300px;
+    @include mixin.mq(tab) {
+        width: 250px;
+        height: 250px;
+    }
+    @include mixin.mq(sp) {
+        width: 100%;
+        height: 100%;
+    }
+  }
+}
+
+.flow__body {
+    width: 300px;
+    height: 300px;
+
+    @include mixin.mq(tab) {
+        width: 250px;
+        height: 250px;
+    }
+    @include mixin.mq(sp) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.flow__body-sub-title {
+  margin-top: 24px;
+  color: color.$main-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+}
+
+.flow__body-title {
+  margin-top: 16px;
+  color: color.$base-color;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 2.2px;
+  @include mixin.mq(sp) {
+    font-size: 1.8rem;
+line-height: 27px; 
+letter-spacing: 0.9px;
+  }
+}
+
+.flow__body-text {
+  margin-top: 16px;
+  color: color.$base-color;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  @include mixin.mq(sp) {
+    margin-top: 8px;
+line-height: 28.8px;
+letter-spacing: 0.32px;
+  }
+}

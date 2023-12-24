@@ -1,0 +1,120 @@
+@use "mixin";
+@use "color";
+@use "font";
+
+/*================================
+worries
+===============================*/
+.worries {
+  @include mixin.mq(pc) {
+    background: url(../img/worries__bg.png) no-repeat top right / contain;
+    width: 100%;
+    height: 481px;
+    position: relative;
+    margin-top: 5px;
+  }
+  @include mixin.mq(tab) {
+    background: url(../img/worries__bg.png) no-repeat top right / contain;
+    width: 100%;
+    height: 481px;
+    position: relative;
+    margin-top: 5px;
+  }
+  @include mixin.mq(sp) {
+    background: url(../img/sp/worries__bg.png) no-repeat top right / contain;
+    width: 100%;
+    height: 226px;
+    margin-top: 0px;
+    margin-bottom: 425px;
+  }
+}
+
+.worries__inner {
+  @include mixin.mq(sp) {
+    position: relative;
+
+  }
+}
+
+.worries__body {
+
+  @include mixin.mq(pc) {
+    position: absolute;
+    top: 20%;
+    left: 19.5%;
+  }
+  @include mixin.mq(tab) {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  @include mixin.mq(sp) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 227px;
+    background: color.$base-color3;
+    padding: 0 20px 40px;
+    width: 100%;
+  }
+}
+
+.worries__title {
+  color: color.$base-color4;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+  @include mixin.mq(sp) {
+    margin-top: 39px;
+    font-size: 2rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+.worries__list {
+  margin-top: 33px;
+  margin-left: 30px;
+  @include mixin.mq(sp) {
+    margin-top: 25px;
+    padding-right: 20px;
+  }
+}
+
+.worries__item {
+  color: color.$base-color;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.9px;
+  position: relative;
+  @include mixin.mq(sp) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+  & + & {
+    margin-top: 21px;
+    @include mixin.mq(sp) {
+      margin-top: 11px;
+      &:nth-of-type(3) {
+        margin-top: 24px;
+      }
+    }
+  }
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/worries__icon.png) no-repeat center center / contain;
+  }
+}
