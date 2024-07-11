@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードはUTF-8を指定 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- noindex -->
+    <meta name="robots" content="noindex" />
+    <!-- レスポンシブ表示の記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのタイトル記述 -->
+    <title>SAKATAKOUMUTEN</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- サイトの概要を記述 -->
+    <meta name="description" content="SAKATAKOUMUTEN" />
+    <!-- スタイルシートを記述(headタグの直前) -->
+    <link rel="stylesheet" href="./css/destyle.css" />
+    <!-- 読み込み順はresetが上 -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#"
+            ><img src="./img/logo-header.svg" loading="lazy" alt=""
+          /></a>
+        </h1>
+        <nav class="header__nav">
+          <a href="#" class="header__link">コンセプト<span>Concept</span></a>
+          <a href="#" class="header__link">施工実績<span>Works</span></a>
+          <a href="#" class="header__link">お知らせ<span>MENU</span></a>
+          <a href="#" class="header__link">会社概要<span>Company</span></a>
+          <a href="#" class="header__link">よくある質問<span>Faq</span></a>
+          <a href="#" class="header__link header__link-bg"
+            >お問い合わせ<span>CONTACT</span></a
+          >
+        </nav>
+
+        <button id="js-drawer-icon" class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="js-drawer-content" class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="#top" class="drawer-content__link">トップ</a>
+        <a href="#about" class="drawer-content__link">当社について</a>
+        <a href="#service" class="drawer-content__link">サービス</a>
+        <a href="#case-study" class="drawer-content__link">導入事例</a>
+        <a href="#news" class="drawer-content__link">お知らせ</a>
+      </nav>
+    </div>
+
+    <div class="mv">
+      <div class="mv__inner">
+        <div class="mv__body">
+          <p class="mv__title">
+            自然に抱かれた<br class="pc-hidden" />安らぎの住まい
+          </p>
+          <p class="mv__lead">
+            美しい自然と豊かな住空間が<br class="pc-hidden" />調和する暮らし
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="concept section">
+      <div class="concept__inner">
+        <div class="section__title">
+          <h2 class="section__title-main">コンセプト</h2>
+          <p class="section__title-sub">Concept</p>
+        </div>
+        <div class="concept__image">
+          <img src="./img/image-concept.jpg" loading="lazy" alt="" />
+        </div>
+        <div class="concept__body">
+          <h3 class="concept__title">自然と調和しながら暮らす家</h3>
+          <p class="concept__text">
+            窓から射し込む太陽の光で目が覚め、美しい自然の風景を見ながら、朝のひと時を過ごす。季節折々の風景の移り変わりを身近に感じられる理想の暮らしをご提案します。
+          </p>
+          <div class="concept__link">
+            <a href="#">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works section">
+      <div class="works__inner inner">
+        <div class="section__title">
+          <h2 class="section__title-main">施工実績</h2>
+          <p class="section__title-sub">works</p>
+        </div>
+        <div class="works__items">
+          <div class="works__item">
+            <div class="works__image">
+              <img src="./img/image-works-1.jpg" loading="lazy" alt="" />
+            </div>
+            <div class="works__body">
+              <h3 class="works__title">若木の家</h3>
+              <div class="works__link">
+                <a href="#">詳しく見る</a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <div class="works__image">
+              <img src="./img/image-works-1.jpg" loading="lazy" alt="" />
+            </div>
+            <div class="works__body">
+              <h3 class="works__title">若木の家</h3>
+              <div class="works__link">
+                <a href="#">詳しく見る</a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <div class="works__image">
+              <img src="./img/image-works-1.jpg" loading="lazy" alt="" />
+            </div>
+            <div class="works__body">
+              <h3 class="works__title">若木の家</h3>
+              <div class="works__link">
+                <a href="#">詳しく見る</a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <div class="works__image">
+              <img src="./img/image-works-1.jpg" loading="lazy" alt="" />
+            </div>
+            <div class="works__body">
+              <h3 class="works__title">若木の家</h3>
+              <div class="works__link">
+                <a href="#">詳しく見る</a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <div class="works__image">
+              <img src="./img/image-works-1.jpg" loading="lazy" alt="" />
+            </div>
+            <div class="works__body">
+              <h3 class="works__title">若木の家</h3>
+              <div class="works__link">
+                <a href="#">詳しく見る</a>
+              </div>
+            </div>
+          </div>
+          <div class="works__item">
+            <div class="works__image">
+              <img src="./img/image-works-1.jpg" loading="lazy" alt="" />
+            </div>
+            <div class="works__body">
+              <h3 class="works__title">若木の家</h3>
+              <div class="works__link">
+                <a href="#">詳しく見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__link works__links">
+          <a href="#">一覧を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section">
+      <div class="news__inner inner">
+        <div class="section__title">
+          <h2 class="section__title-main">お知らせ</h2>
+          <p class="section__title-sub">news</p>
+        </div>
+        <div class="news__items">
+          <div class="news__item">
+            <div class="news__meta">
+              <p class="news__meta-left">2021.07.05</p>
+              <p class="news__meta-right is-yellow">News</p>
+            </div>
+            <p class="news__title">夏季休業のお知らせ。</p>
+          </div>
+          <div class="news__item">
+            <div class="news__meta">
+              <p class="news__meta-left">2021.06.30</p>
+              <p class="news__meta-right">Event</p>
+            </div>
+            <p class="news__title">オンライン見学会開催決定しました。</p>
+          </div>
+          <div class="news__item">
+            <div class="news__meta">
+              <p class="news__meta-left">2021.06.25</p>
+              <p class="news__meta-right">Event</p>
+            </div>
+            <p class="news__title">
+              3棟同時現場内覧会開催いたします。<br class="pc-hidden" />｜
+              山形市・天童市・東根市
+            </p>
+          </div>
+        </div>
+        <div class="section__link news__links">
+          <a href="#">一覧を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="contact__inner inner">
+        <div class="section__title">
+          <h2 class="section__title-main">お問い合わせ</h2>
+          <p class="section__title-sub">contact</p>
+        </div>
+        <div class="contact__items">
+          <div class="contact__item contact__item1">
+            <div class="contact__image">
+              <img src="./img/doc-icon.svg" loading="lazy" alt="" />
+            </div>
+            <h3 class="contact__title contact__title1">資料請求</h3>
+            <div class="contact__link1">
+              <a href="#">資料請求する</a>
+            </div>
+          </div>
+          <div class="contact__item contact__item2">
+            <div class="contact__image2">
+              <img src="./img/mail-icon.svg" loading="lazy" alt="" />
+            </div>
+            <h3 class="contact__title contact__title2">
+              メールでの<br class="pc-hidden" />お問い合わせ
+            </h3>
+            <div class="contact__link contact__link2">
+              <a href="#">問い合わせる</a>
+            </div>
+          </div>
+          <div class="contact__item contact__item3">
+            <div class="contact__image3">
+              <img src="./img/tel-icon.svg" loading="lazy" alt="" />
+            </div>
+            <h3 class="contact__title contact__title3">
+              お電話での<br class="pc-hidden" />お問い合わせ
+            </h3>
+            <p class="contact_text">0120-123-456</p>
+            <p class="contact_text2">営業時間 / 9:00〜18:00 (水曜定休)</p>
+          </div>
+        </div>
+
+        <div class="contact__items-sp">
+          <div class="contact__item-sp">
+            <div class="contact__image-sp">
+              <img src="./img/doc-icon.svg" loading="lazy" alt="" />
+            </div>
+            <h3 class="contact__title-sp">資料請求</h3>
+            <div class="contact__link-sp">
+              <a href="#">資料請求する</a>
+            </div>
+          </div>
+          <div class="contact__item-sp2">
+            <div class="contact__image-sp2">
+              <img src="./img/mail-icon.svg" loading="lazy" alt="" />
+            </div>
+            <h3 class="contact__title-sp2">
+              メールでの<br class="pc-hidden" />お問い合わせ
+            </h3>
+            <div class="contact__link-sp2">
+              <a href="#">問い合わせる</a>
+            </div>
+          </div>
+          <div class="contact__item-sp3">
+            <div class="contact__image-sp3">
+              <img src="./img/tel-icon.svg" loading="lazy" alt="" />
+            </div>
+            <h3 class="contact__title-sp3">
+              お電話での<br class="pc-hidden" />お問い合わせ
+            </h3>
+            <div class="contact__tel-sp">
+              <div class="contact__link-sp2">
+                <a href="#">電話する</a>
+              </div>
+              <p class="contact__text2-sp">営業時間 / 9:00〜18:00 (水曜定休)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__image">
+          <img src="./img/logo-footer.svg" loading="lazy" alt="" />
+        </div>
+        <div class="footer__body">
+          <p class="footer__company">株式会社酒田工務店</p>
+          <p class="footer__adress">
+            〒123-4567&nbsp;&nbsp;山形県山形市山形1-1
+          </p>
+          <p class="footer__tel">0120-123-456</p>
+          <p class="footer__mail">info@example.com</p>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">コンセプト</a></li>
+            <li class="footer__item"><a href="#">施工実績</a></li>
+            <li class="footer__item"><a href="#">お知らせ</a></li>
+            <li class="footer__item"><a href="#">会社概要</a></li>
+            <li class="footer__item"><a href="#">よくある質問</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer2">
+      <div class="footer2__inner inner">
+        <div class="footer2__wrapper">
+          <div class="footer2__left">
+            <p class="footer2__left-map"><a href="#">サイトマップ</a></p>
+            <p class="footer2__left-privacy">
+              <a href="#">プライバシーポリシー</a>
+            </p>
+          </div>
+          <p class="footer2__right">&copy; SAKATAKOMUTEN inc.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
